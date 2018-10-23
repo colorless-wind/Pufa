@@ -241,12 +241,12 @@
 
 			function applyCard(n) {
 
-				var h5Channel = GetQueryString(location.href, 'H5Channel');
-				var channelCode = GetQueryString(location.href, 'ChannelCode');
-				var branchNo = GetQueryString(location.href, 'BranchNo');
-				var managerID = GetQueryString(location.href, 'ManagerID');
-				var managerNumber = GetQueryString(location.href, 'ManagerNumber');
-				var cardNo = GetQueryString(location.href, 'CardNo');
+				var h5Channel = GetQueryString(location.href, 'H5Channel') || '';
+				var channelCode = GetQueryString(location.href, 'ChannelCode') || '';
+				var branchNo = GetQueryString(location.href, 'BranchNo') || '';
+				var managerID = GetQueryString(location.href, 'ManagerID') || '';
+				var managerNumber = GetQueryString(location.href, 'ManagerNumber') || '';
+				var cardNo = GetQueryString(location.href, 'CardNo') || '';
 
 				var search = '';
 				switch(n) {
